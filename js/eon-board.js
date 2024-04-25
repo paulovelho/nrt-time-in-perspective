@@ -7,9 +7,10 @@ class EonBoard {
 	}
 
 	log = (val, data) => {
-		console.info("EONboard: " + val, data);
+		// console.info("EONboard: " + val, data);
 	}
 	addLife = (life) => {
+		this.log("addding ", life);
 		this.lifes.push(life);
 	}
 
@@ -32,23 +33,44 @@ class EonBoard {
 	}
 
 	populate = () => {
+		this.sortLifes();
 		this.lifes.forEach((life, index) => this.includeLife(life, index));
+		this.fixHeight();
+	}
+	sortLifes = () => {
+		this.lifes.sort((a, b) => a.bornYear - b.bornYear);
+	}
+	fixHeight = () => {
+		let height = configs.lifeHeight + 2;
+		let totalH = height * this.lifes.length + configs.yearHeight;
+		$(this.container).css({ height: totalH });
+		$(".year").css({ height: totalH + 20 });
 	}
 	includeLife = (life, index) => {
 		let container = $(this.container + " .lifes");
 		let lifeSpan = this.createLifeSpan(life);
 		let margin = configs.lifeHeight + 2;
-		let yearsBegin = life.bornYear - this.yearStart;
-		let left = (yearsBegin * this.yearWidth) + life.getMonthMargin();
-		lifeSpan.css({width: life.getWidth(), height: configs.lifeHeight });
 		lifeSpan.css("margin-top", margin * index);
-		lifeSpan.css("margin-left", left);
 		$(container).append(lifeSpan);
 	}
 	createLifeSpan = (life) => {
+		let w = life.getWidth();
+		let h = configs.lifeHeight;
+		let yearsBegin = life.bornYear - this.yearStart;
+		let left = (yearsBegin * this.yearWidth) + life.getMonthMargin();
+
+		let $lifeContainer = $(document.createElement('span'))
+		$lifeContainer.addClass('life').addClass(life.type);
+		$lifeContainer.css({width: w, height: h });
+		$lifeContainer.css("margin-left", left);
+		$lifeContainer.attr("title", life.getCaption());
+
 		let $life = $(document.createElement('span'));
-		$life.addClass('life').html(life.name);
-		return $life;
+		$life.addClass('life-caption').html(life.name);
+		$life.css({width: (w-4), height: (h-4) });
+		$($lifeContainer).append($life);
+
+		return $lifeContainer;
 	}
 
 	buildYears = () => {
@@ -60,7 +82,7 @@ class EonBoard {
 	createYearSpan = (year) => {
 		let $span = $(document.createElement('span'));
 		$span.addClass('year').html(year);
-		$span.css({ height: 200, width: this.yearWidth });
+		$span.css({ height: configs.yearHeight, width: this.yearWidth });
 		return $span;
 	}
 

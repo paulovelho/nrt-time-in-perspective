@@ -24,6 +24,10 @@ class Life {
 		return { year, month };
 	}
 
+	getCaption = () => {
+		return this.name + " ("+this.bornYear+" - "+this.deathYear+")";
+	}
+
 	getWidth = () => {
 		let months = this.ageInMonths();
 		let monthSize = this.#yearWidth / 12;

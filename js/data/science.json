@@ -1,0 +1,21 @@
+{
+	"einstein": ["Albert Einstein", 187903, 199504],
+	"newton": ["Isaac Newton", 164301, 172731],
+	"darwin": ["Charles Darwin", 180902, 188204],
+	"feynamn": ["Richard Feynman", 191805, 198802],
+	"galileo": ["Galileo Galilei", 156402, 164201],
+	"curie": ["Marie Curie", 186711, 193406],
+	"tesla": ["Nikola Tesla", 185606, 194301],
+	"lovelace": ["Ada Lovelace", 181512, 185211],
+	"sagan": ["Carl Sagan", 193411, 199612],
+	"pasteur": ["Louis Pasteur", 182212, 189509],
+	"mendel": ["Gregor Mendel", 182207, 188401],
+	"bohr": ["Niels Bohr", 188510, 196211],
+	"hawking": ["Stephen Hawking", 194201, 201803],
+	"copernicus": ["Nicolaus Copernicus", 147302, 154305],
+	"freud": ["Sigmund Freud", 185605, 193909],
+	"turing": ["Alan Turing", 191206, 195407],
+	"fleming": ["Alexander Fleming", 188108, 195503],
+	"faraday": ["Michael Faraday", 179109, 186708],
+	"lavoisier": ["Antoine Lavoisier", 174308, 179405]
+}

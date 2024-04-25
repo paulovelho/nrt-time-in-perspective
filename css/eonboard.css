@@ -1,14 +1,22 @@
-
-.eon-board {
-	margin-top: 10px;
-	background-color: var(--eon-bg);
-	border: 1px solid var(--eon-border-color);
-	border-bottom: 0;
-	width: 100%;
-	min-height: 200px;
+.eon-board-container {
 	position: relative;
 	overflow-x: scroll;
 	overflow-y: hidden;
+	transform:rotateX(180deg);
+	-ms-transform:rotateX(180deg); /* IE 9 */
+	-webkit-transform:rotateX(180deg); /* Safari and Chrome */
+	width: 100%;
+	background-color: var(--eon-bg);
+	border: 1px solid var(--eon-border-color);
+	border-top: 0;
+}
+
+.eon-board {
+	margin-top: 10px;
+	min-height: 200px;
+	transform:rotateX(180deg);
+	-ms-transform:rotateX(180deg); /* IE 9 */
+	-webkit-transform:rotateX(180deg); /* Safari and Chrome */
 }
 
 .years {
@@ -18,19 +26,20 @@
 }
 
 span.year {
-	font-size: 12px;
+	font-size: 14px;
 	display: inline-block;
 	color: var(--year-font-color);
 	height: 100%;
 	border-left: 1px solid var(--year-font-color);
-	padding-left: 3px;
+	padding: 10px 0;
+	line-height: 10px;
+	writing-mode: vertical-lr;
+	text-orientation: mixed;
+
 }
 
-.lifes {
-	position: absolute;
-	margin-top: 30px;
-}
-.life {
-	position: absolute;
-	border: 1px solid red;
+span.year .year-title {
+	transform:rotateX(90deg);
+	-ms-transform:rotateX(90eg); /* IE 9 */
+	-webkit-transform:rotateX(90deg); /* Safari and Chrome */
 }

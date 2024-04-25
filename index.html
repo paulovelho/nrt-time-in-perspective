@@ -16,21 +16,24 @@
 	<meta property="twitter:title" content="nRT: o tempo em perspectiva" />
 	<meta property="twitter:description" content="a história do mundo em uma perspectiva temporal" />
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-12115523-3"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'UA-12115523-3');
-	</script>
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 	<link href='css/bootstrap.min.css' rel='stylesheet'>
 	<link href='css/_variables.css' rel='stylesheet'>
 	<link href='css/eonboard.css' rel='stylesheet'>
+	<link href='css/lifes.css' rel='stylesheet'>
 	<link href='css/style.css' rel='stylesheet'>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TF7CEXX1L5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TF7CEXX1L5');
+</script>
 
 </head>
 
@@ -55,16 +58,19 @@
 		<div class="container">
 			<div class="col-sm-12">
 				Eon board:
-				<div id="eon-board" class="eon-board">
-					<div class="years"></div>
-					<div class="lifes"></div>
+
+				<div class="eon-board-container">
+					<div id="eon-board" class="eon-board">
+						<div class="years"></div>
+						<div class="lifes"></div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</main>
 
 
-	<nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 		<div class="container">
 			<a class="navbar-brand" href="#">nRT | O tempo em perspectiva</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -78,7 +84,7 @@
 					</li>
 					<li class="muted">&middot;</li>
 					<li class="nav-item">
-						<a class="nav-link" href="https://github.com/paulovelho/nrt-death-count">[source code]</a>
+						<a class="nav-link" href="https://github.com/paulovelho/nrt-time-in-perspective">[source code]</a>
 					</li>
 					<li class="muted">&middot;</li>
 					<li class="nav-item">
@@ -97,6 +103,7 @@
 <script type='text/javascript' src='js/life.js'></script>
 <script type='text/javascript' src='js/eon-board.js'></script>
 <script type='text/javascript' src='js/manager.js'></script>
-<script type='text/javascript' src='js/loader.js'></script>
+<script type='text/javascript' src='js/lifeManager.js'></script>
+<script type='module' src='js/loader.js'></script>
 
 </html>

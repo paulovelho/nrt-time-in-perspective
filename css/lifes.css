@@ -1,0 +1,36 @@
+.lifes {
+	position: absolute;
+	margin-top: 50px;
+}
+.life {
+	width: 100%;
+	position: absolute;
+	border: 0;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.life .life-caption {
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	white-space: nowrap;
+	display: block;
+	width: 100%;
+	padding-left: 20px;
+	margin: 2px;
+	padding-top: 1px;
+	border: 1px solid #FFF;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 15%, rgba(200, 200, 200, 0) 50%);
+}
+
+.life.science {
+	background-color: #E53935;
+}
+.life.events {
+	background-color: #999;
+}
+.life.events .life-caption {
+	padding-left: 3px;
+	padding-top: 2px;
+	font-size: 12px;
+}
+

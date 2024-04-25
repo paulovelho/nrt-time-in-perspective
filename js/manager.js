@@ -8,8 +8,6 @@ var managerControl = () => {
 			lifeArr['start'],
 			lifeArr['end']
 		);
-		console.info("adding ", l);
-		console.info("months: ", l.ageInMonths());
 		this.board.addLife(l);
 	};
 
@@ -17,6 +15,7 @@ var managerControl = () => {
 		add: (lifeArr) => {
 			this.addLife(lifeArr);
 		},
+		addLife: this.board.addLife,
 		refresh: this.board.refresh,
 	}
 };
