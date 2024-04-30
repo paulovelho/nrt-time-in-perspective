@@ -1,5 +1,5 @@
-var manager = managerControl();
-var lifes = lifeManager();
+window.manager = managerControl();
+window.lifes = lifeManager();
 
 function returnLifeArr(name, type, start, end) {
 	return {
@@ -8,17 +8,13 @@ function returnLifeArr(name, type, start, end) {
 }
 
 var Initialize = () => {
-//	manager.highlightYears(1938, 1945);
-	lifes.loadAll()
+	window.lifes.loadAll()
 		.then((rs) => {
-			let data = lifes
-				// .limitYears(1879,1955)
+			let data = window.lifes
 				.filter();
-			// let data = lifes.filter();
-			console.info(data);
-			data.map((life) => manager.addLife(life));
+			data.map((life) => window.manager.addLife(life));
 		})
-		.then(() => manager.refresh());
+		.then(() => window.manager.refresh());
 
 };
 

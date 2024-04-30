@@ -17,9 +17,27 @@ class EonBoard {
 
 	refresh = () => {
 		this.log("refreshing", this.lifes);
+		this.clearBoard();
+		this.yearWidth = configs.yearWidth;
 		this.calculateInterval();
 		this.buildYears();
 		this.populate();
+	}
+
+	clearBoard = () => {
+		$(this.container + " .lifes").empty();
+		$(this.container + " .years").empty();
+		$("#life-list").empty();
+	}
+
+	remove = (life) => {
+		console.info("removing ", life);
+		this.lifes = this.lifes.filter(l => l.name != life.name);
+		this.refresh();
+	}
+	removeAll = () => {
+		this.lifes = [];
+		this.refresh();
 	}
 
 	calculateInterval = () => {
@@ -33,7 +51,28 @@ class EonBoard {
 		this.yearEnd = finish + 2;
 	}
 
+	populatePanel = () => {
+		let panelLifes = this.lifes;
+		panelLifes.sort((a, b) => a.name.localeCompare(b.name));
+		console.info(panelLifes);
+		let container = $("#life-list");
+		panelLifes.forEach((life, index) => {
+			let chip = this.createLifeBadge(life, index);
+			$(container).append(chip);
+		});
+	}
+	createLifeBadge = (life, index) => {
+		let removeBtn = $(document.createElement('button'));
+		removeBtn.addClass('btn-close');
+		removeBtn.click(() => this.remove(life));
+		let $lifeChip = $(document.createElement('span'));
+		$lifeChip.addClass('life-chip').addClass('badge').addClass(life.type);
+		$lifeChip.html(life.name).append(removeBtn);
+		return $lifeChip;
+	}
+
 	populate = () => {
+		this.populatePanel();
 		this.sortLifes();
 		this.lifes.forEach((life, index) => this.includeLife(life, index));
 		this.fixHeight();
@@ -76,6 +115,7 @@ class EonBoard {
 
 	highlightYears = (years) => {
 		this.highlight = years;
+		console.info("highlighting ", years);
 		return this;
 	}
 	buildYears = () => {

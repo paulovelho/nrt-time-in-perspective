@@ -5,3 +5,28 @@ main {
 main > .container {
   padding-top: 20px;
 }
+
+.badges, .spacing {
+	margin: 20px;
+}
+.badges .badge {
+	margin: 0 10px;
+	padding: 7px 20px;
+}
+
+.life-chip .btn-close {
+	background-color: #AAA;
+	width: 12px;
+	height: 12px;
+	border-radius: 10px;
+	font-size: 6px;
+	margin-left: 5px;
+}
+
+.year-limit {
+	margin: 10px 10px 0;
+}
+.year-limit input {
+	width: 100px;
+	margin: 0 10px;
+}

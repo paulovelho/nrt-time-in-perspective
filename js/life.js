@@ -1,5 +1,4 @@
 class Life {
-	#yearWidth = configs.yearWidth;
 	constructor(name, type, start, end) {
 		this.name = name;
 		this.type = type;
@@ -31,11 +30,11 @@ class Life {
 
 	getWidth = () => {
 		let months = this.ageInMonths();
-		let monthSize = this.#yearWidth / 12;
+		let monthSize = configs.yearWidth / 12;
 		return (months * monthSize);
 	}
 	getMonthMargin = () => {
-		let monthSize = this.#yearWidth / 12;
+		let monthSize = configs.yearWidth / 12;
 		return (this.bornMonth - 1) * monthSize;
 	}
 

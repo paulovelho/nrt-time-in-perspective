@@ -1,3 +1,9 @@
+:root {
+	--science: #E53935;
+	--arts: #1cc747;
+	--politics: #4e3eda;
+}
+
 .lifes {
 	position: absolute;
 	margin-top: 50px;
@@ -22,14 +28,14 @@
 	background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 15%, rgba(200, 200, 200, 0) 50%);
 }
 
-.life.science {
-	background-color: #E53935;
+.life.science, .badge-legend.science {
+	background-color: var(--science);
 }
-.life.arts {
-	background-color: #1cc747;
+.life.arts, .badge-legend.arts {
+	background-color: var(--arts);
 }
-.life.politics {
-	background-color: #4e3eda;
+.life.politics, .badge-legend.politics {
+	background-color: var(--politics);
 }
 .life.events {
 	background-color: #999;
@@ -40,3 +46,21 @@
 	font-size: 12px;
 }
 
+#life-list .badge {
+	color: black;
+	margin: 5px;
+	padding: 5px 10px;
+	font-size: 14px;
+}
+#life-list .badge.science {
+	border: 2px solid var(--science);
+}
+#life-list .badge.politics {
+	border: 2px solid var(--politics);
+}
+#life-list .badge.arts {
+	border: 2px solid var(--arts);
+}
+#life-list .badge.events {
+	border: 1px solid #444;
+}

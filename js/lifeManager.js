@@ -47,6 +47,9 @@ var lifeManager = () => {
 		let data = this.allLifes();
 		return this.limitYears(data);
 	};
+	this.remove = (lifeId) => {
+		console.info("removing " + lifeId);
+	};
 
 	return {
 		limitYears: (begin, end) => {
@@ -54,6 +57,7 @@ var lifeManager = () => {
 			return this;
 		},
 		filter: this.filter,
+		remove: this.remove,
 		loadAll: () => {
 			let loaders = this.types.map((t) => this.loadData(t));
 			return Promise.all(loaders).then(rs => rs.flat());
