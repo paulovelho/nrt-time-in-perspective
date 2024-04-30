@@ -1,5 +1,9 @@
 {
 	"hundred-years": ["Guerra dos cem anos", 1337, 1453],
+	"peste-negra": ["Peste Negra", 1347, 1351],
+	"paraguai": ["Guerra do Paraguai", 186410, 187003],
+	"civil-war": ["Guerra Civil Americana", 186104, 186504],
+	"napoleonwar": ["Guerras Napoleônicas", 180305, 181511],
 	"ww1": ["Primeira Guerra", 191407, 191811],
 	"ww2": ["Segunda Guerra", 193909, 194509],
 	"berlin-wall": ["Muro de Berlin", 196108, 198911]

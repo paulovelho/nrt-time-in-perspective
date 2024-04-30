@@ -1,0 +1,22 @@
+{
+	"hebe": ["Hebe Camargo", 192903, 201209],
+	"davinci": ["Leonardo DaVinci", 145204, 151905],
+	"michelangelo": ["Michelangelo", 147503, 156402],
+	"beethoven": ["Ludwig Beethoven", 177012, 182703],
+	"mozart": ["Wolfgang Mozart", 175601, 179112],
+	"vangogh": ["Vincent Van Gogh", 185303, 189007],
+	"camoes": ["Luiz de Camões", 1524, 158006],
+	"shakespeare": ["William Shakespeare", 156404, 161604],
+	"pele": ["Pelé", 194010, 202212],
+	"cervantes": ["Miguel de Cervantes", 154709, 161604],
+	"dante": ["Dante Alighieri", 1265, 132109],
+	"tolkien": ["J.R.R. Tolkien", 189201, 197309],
+	"machado-assis": ["Machado de Assis", 183906, 190809],
+	"jorge-amado": ["Jorge Amado", 191208, 200108],
+	"senna": ["Ayrton Senna", 196003, 199405],
+	"jules-verne": ["Jules Verne", 182802, 190505],
+	"cmiranda": ["Carmen Miranda", 190902, 195508],
+	"tomjobim": ["Tom Jobim", 192701, 199412],
+	"monteiro-lobato": ["Monteiro Lobato", 188204, 194807],
+	"lennon": ["John Lennon", 194010, 198012]
+}

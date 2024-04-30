@@ -1,5 +1,5 @@
 var configs = { 
-	yearWidth: 40,
+	yearWidth: 15,
 	yearHeight: 50,
 	lifeHeight: 30,
 };

@@ -35,7 +35,9 @@ span.year {
 	line-height: 10px;
 	writing-mode: vertical-lr;
 	text-orientation: mixed;
-
+}
+span.year.highlight {
+	background-color: var(--eon-highlight);
 }
 
 span.year .year-title {

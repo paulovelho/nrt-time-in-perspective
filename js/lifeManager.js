@@ -1,6 +1,6 @@
 var lifeManager = () => {
 
-	this.types = ["science", "events"];
+	this.types = ["science", "events", "arts", "politics"];
 	this.years = [];
 	this.lifes = [];
 	this.log = (val, data) => {
@@ -40,7 +40,7 @@ var lifeManager = () => {
 		let begin = this.years[0];
 		let end = this.years[1];
 		data = data.filter((l) => { return l.bornYear < end });
-		data = data.filter((l) => { return l.deathYear > begin; })
+		data = data.filter((l) => { return l.deathYear > begin; });
 		return data;
 	};
 	this.filter = () => {
@@ -49,7 +49,10 @@ var lifeManager = () => {
 	};
 
 	return {
-		limitYears: (begin, end) => { this.years = [begin, end].sort(); return this; },
+		limitYears: (begin, end) => {
+			this.years = [begin, end].sort();
+			return this;
+		},
 		filter: this.filter,
 		loadAll: () => {
 			let loaders = this.types.map((t) => this.loadData(t));

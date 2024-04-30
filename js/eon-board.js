@@ -4,6 +4,7 @@ class EonBoard {
 		this.container = "#eon-board";
 		this.yearWidth = configs.yearWidth;
 		this.lifes = [];
+		this.highlight = [];
 	}
 
 	log = (val, data) => {
@@ -73,6 +74,10 @@ class EonBoard {
 		return $lifeContainer;
 	}
 
+	highlightYears = (years) => {
+		this.highlight = years;
+		return this;
+	}
 	buildYears = () => {
 		let container = $(this.container + " .years");
 		for (let i = this.yearStart; i < this.yearEnd; i++) {
@@ -82,6 +87,7 @@ class EonBoard {
 	createYearSpan = (year) => {
 		let $span = $(document.createElement('span'));
 		$span.addClass('year').html(year);
+		if(this.highlight.includes(year)) $span.addClass("highlight");
 		$span.css({ height: configs.yearHeight, width: this.yearWidth });
 		return $span;
 	}

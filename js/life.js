@@ -25,7 +25,8 @@ class Life {
 	}
 
 	getCaption = () => {
-		return this.name + " ("+this.bornYear+" - "+this.deathYear+")";
+		let age = Math.floor(this.ageInMonths()/12);
+		return this.name + " ("+this.bornYear+" - "+this.deathYear+", "+age+" anos)";
 	}
 
 	getWidth = () => {

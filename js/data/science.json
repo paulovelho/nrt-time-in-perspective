@@ -1,5 +1,5 @@
 {
-	"einstein": ["Albert Einstein", 187903, 199504],
+	"einstein": ["Albert Einstein", 187903, 195504],
 	"newton": ["Isaac Newton", 164301, 172731],
 	"darwin": ["Charles Darwin", 180902, 188204],
 	"feynamn": ["Richard Feynman", 191805, 198802],
@@ -17,5 +17,9 @@
 	"turing": ["Alan Turing", 191206, 195407],
 	"fleming": ["Alexander Fleming", 188108, 195503],
 	"faraday": ["Michael Faraday", 179109, 186708],
+	"tycho": ["Tycho Brahe", 154612, 160110],
+	"kepler": ["Johannes Kepler", 157112, 163011],
+	"gutenberg": ["Johannes Gutenberg", 1398, 1468],
+	"sdumont": ["Santos Dumont", 187307, 193207],
 	"lavoisier": ["Antoine Lavoisier", 174308, 179405]
 }
