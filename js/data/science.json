@@ -27,7 +27,7 @@
 	"jung": ["Carl Jung", 187507, 196106],
 	"kant": ["Immanuel Kant", 172404, 180402],
 	"decartes": ["René Decartes", 159603, 165002],
-	"confucio": ["Confúcio", 551, 479],
+	"confucio": ["Confúcio", -551, -479],
 	"pythagoras": ["Pythagoras", -570, -495],
 	"plato": ["Platão", -428, -348],
 	"socrates": ["Sócrates", -470, -399],
