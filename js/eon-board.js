@@ -62,13 +62,18 @@ class EonBoard {
 		});
 	}
 	createLifeBadge = (life, index) => {
-		let removeBtn = $(document.createElement('button'));
-		removeBtn.addClass('btn-close');
-		removeBtn.click(() => this.remove(life));
+		let removeBtn = this.getRemoveBtn(life);
 		let $lifeChip = $(document.createElement('span'));
 		$lifeChip.addClass('life-chip').addClass('badge').addClass(life.type);
 		$lifeChip.html(life.name).append(removeBtn);
 		return $lifeChip;
+	}
+
+	getRemoveBtn = (life) => {
+		let removeBtn = $(document.createElement('button'));
+		removeBtn.addClass('btn-close').addClass('life-rm');
+		removeBtn.click(() => this.remove(life));
+		return removeBtn;
 	}
 
 	populate = () => {
@@ -108,8 +113,12 @@ class EonBoard {
 		let $life = $(document.createElement('span'));
 		$life.addClass('life-caption').html(life.name);
 		$life.css({width: (w-4), height: (h-4) });
-		$($lifeContainer).append($life);
+		if(life.type != "events") {
+			let rmBtn = this.getRemoveBtn(life);
+			$life.append(rmBtn);
+		}
 
+		$($lifeContainer).append($life);	
 		return $lifeContainer;
 	}
 

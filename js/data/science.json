@@ -21,5 +21,17 @@
 	"kepler": ["Johannes Kepler", 157112, 163011],
 	"gutenberg": ["Johannes Gutenberg", 1398, 1468],
 	"sdumont": ["Santos Dumont", 187307, 193207],
-	"lavoisier": ["Antoine Lavoisier", 174308, 179405]
+	"lavoisier": ["Antoine Lavoisier", 174308, 179405],
+	"spinoza": ["Baruch Spinoza", 163211, 167702],
+	"hegel": ["Wilheim Hegel", 177008, 183111],
+	"jung": ["Carl Jung", 187507, 196106],
+	"kant": ["Immanuel Kant", 172404, 180402],
+	"decartes": ["René Decartes", 159603, 165002],
+	"confucio": ["Confúcio", 551, 479],
+	"pythagoras": ["Pythagoras", -570, -495],
+	"plato": ["Platão", -428, -348],
+	"socrates": ["Sócrates", -470, -399],
+	"agostinho": ["Santo Agostinho", 354, 430],
+	"aristotle": ["Aristóteles", -384, -322],
+	"nietzche": ["Friederich Nietzche", 184415, 190025]
 }

@@ -14,13 +14,15 @@ main > .container {
 	padding: 7px 20px;
 }
 
-.life-chip .btn-close {
+.btn-close.life-rm {
 	background-color: #AAA;
 	width: 12px;
 	height: 12px;
 	border-radius: 10px;
 	font-size: 6px;
 	margin-left: 5px;
+	color: #000;
+	border: 1px solid #000;
 }
 
 .year-limit {

@@ -23,5 +23,17 @@
 	"vargas": ["Getúlio Vargas", 188204, 195408],
 	"coracaoleao": ["Ricardo Coração de Leão", 115709, 119904],
 	"assis": ["São Francisco de Assis", 1182, 122610],
+	"cleopatra": ["Cleópatra", -69, -30],
+	"marco-aurelio": ["Marco Aurelio", 121, 180],
+	"noah": ["Noé", -2948, -1998],
+	"abraham": ["Abraão", -2167, -1992],
+	"lincoln": ["Abraham Lincoln", 1809, 1865],
+	"moses": ["Moisés", -1391, -1271],
+	"jesus": ["Jesus Cristo", 4, 36],
+	"brutus": ["Brutus", -85, -42],
+	"caesar": ["Júlio César", -100, -44],
+	"atila": ["Átila, o Huno", 400, 453],
+	"alexander": ["Alexandre, o Grande", -356, -323],
+	"maome": ["Maomé", 570, 632],
 	"dracula": ["Vlad Dracula", 1431, 147612]
 }

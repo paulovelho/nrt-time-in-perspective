@@ -18,5 +18,9 @@
 	"cmiranda": ["Carmen Miranda", 190902, 195508],
 	"tomjobim": ["Tom Jobim", 192701, 199412],
 	"monteiro-lobato": ["Monteiro Lobato", 188204, 194807],
+	"kafka": ["Franz Kafka", 188307, 192406],
+	"pessoa": ["Fernando Pessoa", 188806, 193511],
+	"magno": ["Carlo Magno", 748, 814],
+	"elvis": ["Elvis Presley", 193501, 197708],
 	"lennon": ["John Lennon", 194010, 198012]
 }
